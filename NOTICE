@@ -1,10 +1,9 @@
 Real-Time Handwriting to LaTeX v1
 Copyright 2026 Shrookin
 
-This repository's model, reference code, and documentation are intended to be
-released under Apache-2.0. They were developed through a transformative
-online-ink recognition workflow and do not include or redistribute raw
-training data.
+This repository's model, reference code, and documentation are released under
+Apache-2.0. They were developed through a transformative online-ink
+recognition workflow and do not include or redistribute raw training data.
 
 Required acknowledgements for the training sources are documented in
 docs/ATTRIBUTION_AND_LICENSE.md. In particular, preserve attribution to the

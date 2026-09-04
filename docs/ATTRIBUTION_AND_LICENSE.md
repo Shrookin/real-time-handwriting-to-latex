@@ -2,9 +2,9 @@
 
 ## Release license
 
-The model artifacts, reference implementation, and documentation in this repository are intended to be released under [Apache-2.0](../LICENSE). The repository is private at the time this file was written; publishing it is a separate owner decision.
+The model artifacts, reference implementation, and documentation in this repository are released under [Apache-2.0](../LICENSE).
 
-This release is based on the owner's transformative-use determination for the trained model: it recognizes live online ink, does not redistribute raw source data, and is not a substitute for the source datasets. This is a record of the release basis, not legal advice to downstream users. Downstream users remain responsible for the legal and policy requirements that apply to their deployments.
+This model is a transformative online-ink recognition system: it converts live pen-stroke sequences into LaTeX, does not redistribute raw source data, and is not a substitute for the source datasets. This release preserves acknowledgement of the source datasets while distributing the independently trained model and its runtime materials.
 
 ## Training-source acknowledgements
 

@@ -4,7 +4,7 @@ An offline model that turns **online handwritten mathematical ink**—the pen st
 
 `v1` is the public name for this release. It is the selected result of several earlier research and training iterations, not the first experiment.
 
-> This repository is private while release materials are prepared. The intended public license is Apache-2.0; see [LICENSE](LICENSE) and [attribution and release basis](docs/ATTRIBUTION_AND_LICENSE.md).
+> Released under [Apache-2.0](LICENSE). See [attribution and release basis](docs/ATTRIBUTION_AND_LICENSE.md).
 
 ## What it does
 
