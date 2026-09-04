@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "publicModelName": "Real-Time Handwriting to LaTeX v1",
+  "publicVersion": "v1",
+  "internalProvenanceName": "expression-torch-v4-real-structure-replay-candidate",
+  "format": "onnx",
+  "runtime": "onnxruntime or a compatible ONNX Runtime",
+  "input": {
+    "name": "features",
+    "type": "float32",
+    "shape": [1, "point_count", 6],
+    "maxPoints": 384,
+    "features": ["normalized_x", "normalized_y", "delta_x", "delta_y", "new_stroke", "same_stroke"]
+  },
+  "output": {
+    "tokenIds": "int64[1,64]",
+    "tokenScores": "float32[1,64]",
+    "stopToken": "<eos>"
+  },
+  "artifacts": {
+    "onnx": { "path": "handwriting-to-latex-v1.onnx", "sha256": "33832e523d1d60e6bdcf8b0482d31d4a3c416c737532b95ac4376e07370be16a" },
+    "vocabulary": { "path": "handwriting-to-latex-v1-vocab.json", "sha256": "e2a77b00b6e4317148ee3cf6267a979175bae1a49f25076a62753ee35d70bb9b" },
+    "checkpoint": { "path": "handwriting-to-latex-v1.pt", "sha256": "0106db8171a25e4b6e1dfdfc41c4292c836bdd22c627465c02b3d982672da70f" }
+  },
+  "sourceRepository": { "name": "NewNotes", "commit": "199084a982f614a8500a789085191a3aa06568c5" }
+}
