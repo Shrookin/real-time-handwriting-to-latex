@@ -2,8 +2,6 @@
 
 An offline model that turns **online handwritten mathematical ink**—the pen strokes captured while someone writes—into LaTeX. It is intended for real-time note-taking, whiteboards, stylus apps, accessibility tooling, and mathematical-input experiments.
 
-`v1` is the public name for this release. It is the selected result of several earlier research and training iterations, not the first experiment.
-
 > Released under [Apache-2.0](LICENSE). See [attribution and release basis](docs/ATTRIBUTION_AND_LICENSE.md).
 
 ## What it does
