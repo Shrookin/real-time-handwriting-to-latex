@@ -1,0 +1,2 @@
+# Install a CPU or CUDA PyTorch wheel appropriate for your platform first.
+numpy>=1.26,<2.0

@@ -32,10 +32,10 @@ The final run processed 12,864 batches: 1,286 CROHME replay batches, 1,286 piece
 
 ## Reproducing a comparable training run
 
-Raw datasets and generated caches are intentionally not distributed in this repository. Obtain each dataset directly from its source, comply with its terms, preserve its original split boundaries, and use the exact preprocessing described above. A comparable mixed run needs:
+The source package used for cache construction, training, evaluation, and synthetic corpus generation is included under [`training/`](../training/README.md). Raw datasets and generated caches are intentionally not distributed in this repository. Obtain each dataset directly from its source, comply with its terms, preserve its original split boundaries, and use the exact preprocessing described above. A comparable mixed run needs:
 
 ```text
-python -m recognition_service.expression_mixed_train \
+python -m training.recognition_service.expression_mixed_train \
   --mathwriting-cache-dir <mathwriting-replay-cache> \
   --crohme-cache-dir <crohme-cache> \
   --piecewise-cache-dir <piecewise-cache> \
