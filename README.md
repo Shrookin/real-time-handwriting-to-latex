@@ -13,7 +13,26 @@ An offline model that turns **online handwritten mathematical ink**—the pen st
 
 It is **not** an image/OCR model. A photograph, scan, raster canvas, or PDF must first be converted to ordered pen strokes by a separate recognizer. It also does not segment a full page into expressions; pass one expression at a time.
 
-## Quick start: ONNX Runtime
+## Get v1
+
+### Download the ready-to-run model bundle
+
+Download [`handwriting-to-latex-v1.zip`](https://github.com/Shrookin/real-time-handwriting-to-latex/releases/download/v1.0.0/handwriting-to-latex-v1.zip), unzip it, then run:
+
+```bash
+cd handwriting-to-latex-v1
+python -m venv .venv
+# Windows: .venv\\Scripts\\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python examples/run_onnx.py --input examples/sample_request.json
+```
+
+The bundle contains the ONNX runtime model, vocabulary, provenance checkpoint, reference program, integration documentation, license, and source acknowledgements. It is the simplest option for adding v1 to an application.
+
+### Clone the full repository
+
+Clone the repository when you also want the training and evaluation source:
 
 ```bash
 git clone https://github.com/Shrookin/real-time-handwriting-to-latex.git
@@ -25,7 +44,7 @@ python -m pip install -r requirements.txt
 python examples/run_onnx.py --input examples/sample_request.json
 ```
 
-The program reads the online-ink JSON shown below and writes a JSON response containing `latex`, `confidence`, and the decoded tokens.
+The program reads the online-ink JSON shown below and writes a JSON response containing `latex`, `confidence`, and the decoded tokens. See [Downloads and installation](docs/DOWNLOADS.md) for browser, Rust, server, and mobile delivery choices.
 
 ```json
 {
